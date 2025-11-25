@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Explainer - C.E.C</title>
+    <link rel="stylesheet" href="../static/css/explainer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <div class="header-left">
+                <span class="site-title">C.E.C</span>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="explainer.html" class="active">Code Explainer</a></li>
+                    <li><a href="translator.html">Code Convertor</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="explainer-hero">
+                <h1>Code Explainer</h1>
+                <p class="subtitle">Paste your code below and get a detailed explanation of what it does.</p>
+            </section>
+            <section class="explainer-section">
+                <div class="input-card">
+                    <div class="card-header">
+                        <span>Input Code</span>
+                        <button class="card-action" id="clear-btn">&times; Clear</button>
+                    </div>
+                    <div class="language-select">
+                        <label for="source-language">Language:</label>
+                        <select id="source-language">
+                            <option value="python">Python</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="java">Java</option>
+                            <option value="c">C</option>
+                            <option value="cpp">C++</option>
+                            <option value="csharp">C#</option>
+                            <option value="ruby">Ruby</option>
+                            <option value="php">PHP</option>
+                            <option value="swift">Swift</option>
+                            <option value="go">Go</option>
+                            <option value="rust">Rust</option>
+                        </select>
+                    </div>
+                    <textarea id="code-input" placeholder="Paste your code here..."></textarea>
+                    <button id="explain-btn" class="main-btn"><i class="fa-solid fa-wand-magic-sparkles"></i> Explain Code</button>
+                </div>
+                <div class="output-card">
+                    <div class="card-header">
+                        <span>Explanation</span>
+                        <button class="card-action" id="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+                    </div>
+                    <div id="explanation-output" class="output-placeholder" style="white-space: pre-wrap; overflow-y: auto; overflow-x: auto; max-height: 300px; width: 100%; box-sizing: border-box;">
+                        <span class="output-icon"><i class="fa-solid fa-code"></i></span>
+                        <span>Your code explanation will appear here</span>
+                    </div>
+                </div>
+            </section>
+            <section class="info-box">
+                <div class="info-header">How it works</div>
+                <div class="info-body">
+                    Our Code Explainer generate a brief explanation. This helps you understand:
+                    <ul>
+                        <li>What the code does</li>
+                        <li>How the logic works</li>
+                        <li>Key programming concepts used</li>
+                        <li>Potential optimizations or issues</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="footer-content">
+                <span class="footer-title">C.E.C - Code Explainer and Convertor</span>
+            </div>
+        </footer>
+    </div>
+    <script src="../static/js/explainer_backend.js"></script>
+</body>
+</html>

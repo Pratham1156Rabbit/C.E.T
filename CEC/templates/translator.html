@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Convertor - C.E.C</title>
+    <link rel="stylesheet" href="../static/css/translator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <div class="header-left">
+                <span class="site-title">C.E.C</span>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="explainer.html">Code Explainer</a></li>
+                    <li><a href="translator.html" class="active">Code Convertor</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="translator-hero">
+                <h1>Code Convertor</h1>
+                <p class="subtitle">Convert your code from one programming language to another.</p>
+            </section>
+            <section class="translator-section">
+                <div class="input-card">
+                    <div class="card-header">
+                        <span>Input Code</span>
+                        <button class="card-action" id="clear-btn">&times; Clear</button>
+                    </div>
+                    <div class="language-select">
+                        <label for="source-language">Source Language:</label>
+                        <select id="source-language">
+                            <option value="python">Python</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="java">Java</option>
+                            <option value="c">C</option>
+                            <option value="cpp">C++</option>
+                            <option value="csharp">C#</option>
+                            <option value="ruby">Ruby</option>
+                            <option value="php">PHP</option>
+                            <option value="go">Go</option>
+                            <option value="rust">Rust</option>
+                        </select>
+                    </div>
+                    <textarea id="code-input" placeholder="Paste your code here..."></textarea>
+                </div>
+                <div class="output-card">
+                    <div class="card-header">
+                        <span>Converted Code</span>
+                        <button class="card-action" id="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+                    </div>
+                    <div class="language-select" style="margin-bottom: 10px;">
+                        <label for="target-language" class="visually-hidden">Target Language:</label>
+                        <select id="target-language">
+                            <option value="" disabled selected>Select target language</option>
+                            <option value="python">Python</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="java">Java</option>
+                            <option value="c">C</option>
+                            <option value="cpp">C++</option>
+                            <option value="csharp">C#</option>
+                            <option value="ruby">Ruby</option>
+                            <option value="php">PHP</option>
+                            <option value="go">Go</option>
+                            <option value="rust">Rust</option>
+                        </select>
+                        <button id="translate-btn" class="main-btn"><i class="fa-solid fa-right-left"></i> Convert</button>
+                    </div>
+                    <div id="translation-output" class="output-placeholder" style="white-space: pre-wrap; overflow-y: auto; overflow-x: auto; max-height: 300px; width: 100%; box-sizing: border-box;">
+                        <span class="output-icon"><i class="fa-solid fa-code"></i></span>
+                        <span>Your converted code will appear here</span>
+                    </div>
+                </div>
+            </section>
+            <section class="info-box">
+                <div class="info-header">How to use the Code Convertor</div>
+                <div class="info-body">
+                    <ol>
+                        <li>Paste your source code in the input area</li>
+                        <li>Select the target programming language from the dropdown</li>
+                        <li>Click "Convert" to convert your code</li>
+                        <li>The converted code will appear in the output area</li>
+                    </ol>
+                    <div class="info-note">
+                        Note: While our Convertor aims to preserve functionality, you might need to make minor adjustments to the converted code in some cases.
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="footer-content">
+                <span class="footer-title">C.E.C - Code Explainer and Convertor</span>
+        </footer>
+    </div>
+    <script src="../static/js/translator_backend.js"></script>
+</body>
+</html>
